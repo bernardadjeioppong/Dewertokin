@@ -1,0 +1,39 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion AppMetaData.compileSdkVersion
+    defaultConfig {
+        applicationId AppMetaData.id
+        minSdkVersion AppMetaData.minSdkVersion
+        targetSdkVersion AppMetaData.targetSdkVersion
+        versionCode AppMetaData.versionCode
+        versionName AppMetaData.versionName
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+        buildConfigField "boolean", "DEBUG_LOGS", "true"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation Libraries.kotlin
+    implementation Libraries.appCompat
+    implementation Libraries.constraintLayout
+    implementation Libraries.design
+    implementation Libraries.recyclerView
+
+    testImplementation Libraries.jUnit
+    androidTestImplementation Libraries.testRunner
+    androidTestImplementation Libraries.testEspresso
+}

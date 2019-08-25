@@ -1,0 +1,32 @@
+{
+	"car1": {
+		"id": "01",
+		"Model": "BMW- i8",
+		"Immatriculation": "2241 HH"
+	},
+
+	"car2": {
+		"id": "02",
+		"Model": "Mercedes- GLC Coupé",
+		"Immatriculation": "2242 HH"
+	},
+
+	"car3": {
+		"id": "03",
+		"Model": "VW- Tiguan",
+		"Immatriculation": "2243 HH"
+	},
+
+	"car4": {
+		"id": "04",
+		"Model": "Audo- TT Coupé",
+		"Immatriculation": "2244 HH"
+	},
+
+	"car5": {
+		"id": "05",
+		"Model": "Porsche- Panamera Turbo S",
+		"Immatriculation": "2245 HH"
+	}
+}
+

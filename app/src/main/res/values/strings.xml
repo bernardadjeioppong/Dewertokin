@@ -1,0 +1,16 @@
+<resources>
+    <!--A-->
+    <string name="app_name">Auto Scout</string>
+
+    <!--P-->
+    <string name="photo">Photo</string>
+
+    <!--T-->
+    <string name="title">List of available cars</string>
+    <string name="title_activity_detail">DetailActivity</string>
+
+    <!--S-->
+    <string name="sort_by_name">Sort by Name</string>
+    <string name="sort_by_price">Sort by Price</string>
+    <string name="sub_title">Please select the car you want to buy to get the price</string>
+</resources>
